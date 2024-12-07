@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Monitoring Energi Listrik</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <!-- Relay Status (Top Right) -->
+        <div class="relay-status">
+            Relay: <span id="relay-status">Loading...</span>
+        </div>
+
+        <!-- Main Container -->
+        <div class="container">
+            <div class="header">
+                <h1>Dashboard Monitoring Energi Listrik</h1>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h2>Voltage</h2>
+                    <p id="voltage">Loading...</p>
+                </div>
+                <div class="card">
+                    <h2>Current</h2>
+                    <p id="current">Loading...</p>
+                </div>
+                <div class="card">
+                    <h2>Power</h2>
+                    <p id="power">Loading...</p>
+                </div>
+                <div class="card">
+                    <h2>Energy</h2>
+                    <p id="energy">Loading...</p>
+                </div>
+                <div class="card">
+                    <h2>Estimasi Biaya Listrik</h2>
+                    <p id="cost">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        Copyright © 2024 Kelompok 2 IoT
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database-compat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
